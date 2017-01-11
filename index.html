@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Converting Fractions to Decimals and Percentage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.js"></script>
+  <script src="js/responsive.js"></script>
+  <style>
+  #mainWrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	border: 0px; solid transparent;
+	overflow: hidden;
+  }
+  </style>
+</head>
+<body>
+	<iframe scrolling = "no" id="mainWrapper" src="src/game.html">
+	</iframe>
+	<script>
+		$(document).ready(function() {
+			var res = new Responsive();
+			res.scale();
+		});
+	</script>
+</body>
+</html>
