@@ -1,0 +1,299 @@
+
+body  {
+	background: #000;
+}
+.mainContainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	overflow: hidden;
+	font-family: verdana;
+	background: #fff;
+}
+
+#logo{
+	position: absolute;
+	width: 200px;
+	height: 65px;
+	left: 20px;
+	top:12px;
+	background-image: url('../images/logo.png');z-index: 10000;
+}
+#qstCover {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	width: 1024px;
+	height: auto;
+	font-size: 22px;
+}
+#qstTitle {
+	margin-top: 60px;
+	margin-left: 30px;
+}
+#qstData {
+	margin-top: 7px;
+	margin-left: 30px;
+	height: 50px;
+}
+#qstData p{
+	margin-left: 20px;
+	float: left;
+}
+.equationCover {
+	float: left;
+	margin-top: 33px;
+	margin-left: 45px;
+	width: 100%;
+}
+.triangle {
+	width: 0; 
+	height: 0; 
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;	
+	border-bottom: 26px solid #f00;
+	line-height: 28px;
+	text-indent : 30px;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+}
+#blueTriangle {
+	border-bottom: 26px solid #0f55ca;
+}
+#yellowTriangle {
+	border-bottom: 26px solid #f2ff68;
+}
+.traingleTxt {
+	float: left;
+	margin-left: 40px;
+}
+#partitionCover{ 
+	position: absolute;
+	top: 200px;
+	right: 80px;
+	width: 50px;
+	height: 300px;
+}
+.btn {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 14px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.btnActive {
+	box-shadow: 1px 1px 20px black;
+}
+.ruler {
+	position: absolute;
+	top: 440px;
+	left: 183px;
+	width: 659px;
+	height: 54px;
+	background: url(../images/1.png);
+	display: none;
+}
+#ruler2{
+	background: url(../images/2.png);
+}
+#ruler3{
+	background: url(../images/3.png);
+}
+#ruler4{
+	background: url(../images/4.png);
+}
+#fractionCover {
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	width: 100%;
+	height: 140px;
+	
+	
+}
+.qst {
+	/*
+	margin-top: 50px;
+	margin-left: 18px;
+	float: left;*/
+	position: absolute;
+	top: 50px;
+	left: 18px;
+	width: 250px;
+	font-size: 20px;
+}
+#qst2 {
+	left: 270px;
+}
+#qst3{
+	left: 518px;
+}
+.qstTxt {
+	position: absolute;
+	top: 0px;
+	left : -10px;
+	width: 60px;
+	text-align: right;
+}
+.equal1 {
+	position: absolute;
+	top: 0px;
+	left: 65px;
+	width: 20px;
+}
+.decVal {
+	position: absolute;
+	top: -10px;
+	left: 90px;
+	width: 35px;
+	height: 40px;
+	border: 2px solid #000;
+	font-size: 20px;
+	text-align: center;
+}
+.equal2 {
+	position: absolute;
+	top: 0px;
+	left: 134px;
+	width: 20px;
+}
+.perVal {
+	position: absolute;
+	top: -10px;
+	left: 155px;
+	width: 35px;
+	height: 40px;
+	border: 2px solid #000;
+	font-size: 20px;
+	text-align: center;
+}
+.equal3 {
+	position: absolute;
+	top: 0px;
+	left: 195px;
+	width: 20px;
+}
+#submitBtn{
+	position: absolute;
+	left: 740px;
+	top:32px;
+	z-index: 10;
+	opacity: 0.4;
+	cursor: pointer;
+}
+#nxtBtn{
+	position: absolute;
+	width: 130px;
+	height: 65px;
+	left: 880px;
+	top:32px;
+	z-index: 10;
+	cursor: pointer;
+}
+#nxtBtn:hover{
+	background-image: url("../images/nxt_over.png");
+	z-index: 100000;
+}
+#submitBtn:hover{
+	background-image: url("../images/submit_over.png");
+}
+.disablePartition {
+	cursor: default;
+	opacity: 0.3;
+}
+#validateCover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1024px;
+	height: 768px;
+	background: rgba(0, 0, 0, 0.2);
+	background-position: center !Important;
+	background-repeat: no-repeat !Important;
+	z-index: 5;
+	display: none;
+}
+#helpBtn {
+	position: absolute;
+    top: 70px;
+    right: 72px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #000;
+    border-radius: 61px;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 14px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#popup {
+	position: absolute;
+    top: 88px;
+    right: 140px;
+    width: 400px;
+    height: 253px;
+	background: url(../images/popup.png);
+	display: none;
+}
+#clsBtn {
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+    height: 22px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+#pop_text {
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 360px;
+	height: auto;
+	font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+}
+.marker {
+	position: absolute;
+    top: 421px;
+    left: 172px;
+	width: 0; 
+	height: 0; 
+	border-left: 17px solid transparent;
+	border-right: 17px solid transparent;	
+	border-top: 26px solid #f00;
+	cursor: pointer;
+}
+#blueMarker {
+	border-top: 26px solid #0f55ca;
+	z-index: 3;
+}
+#yellowMarker {
+	border-top: 26px solid #f2ff68;
+	z-index: 2;
+}
+#redMarker {
+	z-index: 4;
+}
+.wrong1 , .wrong2{
+	position: absolute;
+	top: 39px;
+    left: 96px;
+	width: 28px;
+	height: 23px;
+	background: url(../images/cross.png);
+	background-size: 100% 100%;
+	display: none;
+}
+.wrong2 {
+	left: 162px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Converting Fractions to Decimals and Percentage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/jquery.ui.touch-punch.js"></script>
+   <!-- <script src="js/lcm.js"></script> -->
+  <script src="../js/responsive.js"></script>
+  <script src="../js/script.js"></script>
+  <style>
+
+  </style>
+
+</head>
+<body>
+	<div class="mainContainer"><img src="../images/bg.jpg" alt="" style="position:absolute;width:1024px;left:0px;top:0px;height:768px;" />
+	
+	
+		<div id="qstCover">
+			<div id="qstTitle">Find the Decimal and Percent value of :</div>
+			<div id="qstData"><p></p><p></p><p></p></div>
+			<div id ="equationCover1" class="equationCover">
+				<div id="redTriangle" class="triangle">=</div>
+				<div class="traingleTxt" id="redTxt"></div>
+			</div>
+			<div id ="equationCover2" class="equationCover">
+				<div id="blueTriangle" class="triangle">=</div>
+				<div class="traingleTxt" id="blueTxt"></div>
+			</div>
+			<div id ="equationCover3" class="equationCover">
+				<div id="yellowTriangle" class="triangle">=</div>
+				<div class="traingleTxt" id="yellowTxt"></div>
+			</div>
+		</div>
+		<div id ="partitionCover">
+			<div id ="btn1" ruler="1" class="btn">5</div>
+			<div id ="btn2" ruler="2" class="btn">10</div>
+			<div id ="btn3" ruler="3" class="btn">20</div>
+			<div id ="btn4" ruler="4" class="btn">100</div>
+		</div>
+		<div style="position:absolute;top:50px;">
+		<div id="ruler1" class="ruler"></div>
+		<div id="ruler2" class="ruler"></div>
+		<div id="ruler3" class="ruler"></div>
+		<div id="ruler4" class="ruler"></div>
+		<div id="redMarker" class="marker" index="0"></div>
+		<div id="blueMarker" class="marker" index="1"></div>
+		<div id="yellowMarker" class="marker" index="2"></div>
+		</div>
+		<div id="fractionCover">
+			<div id="qst1" class="qst">
+				<div class ="qstTxt">3/5</div>
+				<span class ="equal1">=</span>
+				<input type = "text" class="decVal"/>
+				<span class ="equal2">=</span>
+				<input type = "text" class="perVal"/>
+				<span class ="equal3">%</span>
+				<div class="wrong wrong1"></div>
+				<div class="wrong wrong2"></div>
+			</div>
+			<div id="qst2" class="qst">
+				<div class ="qstTxt">3/5</div>
+				<span class ="equal1">=</span>
+				<input type = "text" class="decVal"/>
+				<span class ="equal2">=</span>
+				<input type = "text" class="perVal"/>
+				<span class ="equal3">%</span>
+				<div class="wrong wrong1"></div>
+				<div class="wrong wrong2"></div>
+			</div>
+			<div id="qst3" class="qst">
+				<div class ="qstTxt">3/5</div>
+				<span class ="equal1">=</span>
+				<input type = "text" class="decVal"/>
+				<span class ="equal2">=</span>
+				<input type = "text" class="perVal"/>
+				<span class ="equal3">%</span>
+				<div class="wrong wrong1"></div>
+				<div class="wrong wrong2"></div>
+			</div>
+			<div id ="submitBtn"><img src="../images/submit.png" alt=""/></div>
+			<div id ="nxtBtn"><img src="../images/nxt.png" alt=""/></div>
+		</div>
+		<div id="validateCover"></div>
+		<div id="helpBtn">?</div>
+		<div id="popup">
+			<div id="clsBtn"></div>
+			<div id="pop_text">&nbsp;&nbsp;" You should move the coloured markers according to the question (for example<br/> If the question is 3/5 then you should mark position 3 at the ruler when the ruler partition is 5). &nbsp;&nbsp;Afterwards you <br/>can change the ruler partition value to 100 so as to find the decimal and percentage values for the questions easily."</div>
+		</div>
+		<audio id="audioPlayer"></audio>
+	</div>
+	<script>
+		$(document).ready(function() {
+			
+			gameStart();
+		});
+	</script>
+</body>
+</html>
